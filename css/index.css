@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+  border: 0;
+  outline: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+li, ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+body {
+  height: 2000vh;
+}
+
+.menus {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2.5vh;
+  z-index: 100;
+  color: white;
+}
+
+.menus li {
+  margin: 0 4vh;
+  cursor: pointer;
+}
+
+.topM {
+  top: 2vh;
+}
+
+.prod_more {
+  left: 20vw;
+}
+
+.lang {
+  left: 75vw;
+}
+
+.shop {
+  left: 90vw;
+  padding: 1vh;
+  top: 1vh;
+  border-radius: 50px;
+  background: white;
+  color: black;
+}
+
+.botM {
+  top: 92vh;
+}
+
+.sns {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.rotateLogo {
+  top: 65vh;
+  right: 0;
+  margin-right: 2vw;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.rotateLogo img {
+  width: 30vh;
+  height: 30vh;
+}
+
+#fixedWrap {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#fixedWrap .sec1 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#fixedWrap .sec1 #videoSlide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  top: 20vh;
+  margin-left: 2vw;
+}
+
+#fixedWrap .sec1 #videoSlide #videoSlideBox {
+  width: 20vh;
+  height: 1vh;
+  background: rgba(255, 255, 255, 0.514);
+}
+
+#fixedWrap .sec1 #videoSlide #videoSlideBox #videoSlideNow {
+  width: 50%;
+  height: 100%;
+  background: white;
+}
+
+#fixedWrap .sec1 #videoSlide #VideoArrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2vh;
+  width: 6vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#fixedWrap .sec1 #videoSlide #VideoArrow .next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#fixedWrap .sec1 video {
+  position: absolute;
+  -webkit-transform: translateY(0%) translateX(0%);
+          transform: translateY(0%) translateX(0%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+}
+
+#fixedWrap .sec1 .video2 {
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#fixedWrap .sec1 .mainContent {
+  position: absolute;
+  margin-left: 2vw;
+  color: white;
+  margin-top: 23vh;
+  width: 50vw;
+  z-index: 1000;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+#fixedWrap .sec1 .mainContent .logo {
+  font-size: 15vh;
+  line-height: 14vh;
+  font-weight: lighter;
+}
+
+#fixedWrap .sec1 .mainContent .mainBla {
+  margin-top: 5vh;
+  font-size: 2.5vh;
+}
+
+#fixedWrap .sec1 .mainContent .viewMore {
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.5vh;
+}
+
+#fixedWrap .sec1 .mainContent .viewMore img {
+  margin-left: 5vh;
+}
+
+#fixedWrap .sec1 .mainContent2 {
+  opacity: 0;
+}
+
+#scrollWrap {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: solid 2px red;
+  width: 1600vh;
+  left: 110vw;
+}
+
+#scrollWrap .sec2 {
+  background: yellow;
+  position: absolute;
+  background: #1a1a1a;
+  width: 360vh;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#scrollWrap .sec2 #flowerTypo {
+  position: absolute;
+  left: 10vw;
+  top: 20vh;
+  z-index: 3;
+}
+
+#scrollWrap .sec2 #flowerTypo img {
+  width: 50vw;
+}
+
+#scrollWrap .sec2 #flowerTypo img:nth-child(2) {
+  left: -0%;
+  position: absolute;
+}
+
+#scrollWrap .sec2 #model {
+  position: absolute;
+  left: 48vw;
+  width: 70vh;
+  height: 90vh;
+  background-image: url("../img/main-flower.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+#scrollWrap .sec2 .content {
+  color: #b6b6b6;
+  position: absolute;
+  left: 190vh;
+  font-size: 2.5vh;
+  top: 25vh;
+}
+
+#scrollWrap .sec2 .content .logo {
+  font-size: 10vh;
+  font-weight: 100;
+  margin: 2vh 0;
+  color: white;
+  position: absolute;
+  top: 30%;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#scrollWrap .sec2 .content .blabla {
+  line-height: 5vh;
+  margin-top: 20vh;
+}
+
+#scrollWrap .sec2 .content .contentBT {
+  margin-top: 5vh;
+}
+
+#scrollWrap .sec2 .content .contentBT img {
+  margin-left: 5vh;
+}
+
+#scrollWrap .sec3 {
+  background: white;
+  width: 480vh;
+  height: 100vh;
+  position: absolute;
+  left: 350vh;
+}
+
+#scrollWrap .sec3 #sec3typo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 5vh;
+  left: 20vw;
+  z-index: 100;
+}
+
+#scrollWrap .sec3 #sec3typo img {
+  position: absolute;
+  width: 150vh;
+}
+
+#scrollWrap .sec3 .productAD {
+  height: 90vh;
+  width: 130vh;
+  position: absolute;
+  left: 170vh;
+  top: -10%;
+  background-image: url("../img/main-02.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#scrollWrap .sec3 .content {
+  left: 320vh;
+  color: #7a7a7a;
+}
+
+#scrollWrap .sec3 .content .logo {
+  color: #222222;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#scrollWrap .sec3 #hyaProd {
+  width: 120vh;
+  height: 100vh;
+  left: 420vh;
+  position: absolute;
+  background-image: url("../img/main-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.logo {
+  font-family: 'STIX Two Text', serif;
+}
+
+.content {
+  color: #b6b6b6;
+  position: absolute;
+  left: 100vw;
+  font-size: 2.5vh;
+  top: 25vh;
+}
+
+.content .logo {
+  font-size: 10vh;
+  font-weight: 100;
+  margin: 2vh 0;
+  color: white;
+  position: absolute;
+  top: 30%;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.content .blabla {
+  line-height: 5vh;
+  margin-top: 20vh;
+}
+
+.content .contentBT {
+  margin-top: 5vh;
+}
+/*# sourceMappingURL=index.css.map */
