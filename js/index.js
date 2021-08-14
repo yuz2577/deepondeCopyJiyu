@@ -21,7 +21,9 @@ let videoArrow = document.querySelector('#VideoArrow'),
     quickBehind = document.querySelectorAll('.quickBehind > li'),
     quickBox = document.querySelector('#quickBox'),
     myContent = document.querySelector('#myContent'),
-    goFirst = document.querySelector('#goFirst');
+    goFirst = document.querySelector('#goFirst'),
+    now = document.querySelector('#now'),
+    nowBar = document.querySelector('.nowBar');
 ///////
 
 let videoNowLel = 0;
@@ -91,7 +93,9 @@ window.addEventListener('scroll',()=>{
     hyaProdTop = - (scrollTop / 20) ;
     productsMove = scrollTop / 30;
     scaleUP = Math.floor(-(-(Math.floor(scrollTop / 20)-100)*0.1 +75));
-    console.log (scaleUP+'타')
+    // console.log (scaleUP+'타')
+    let nowPer = Math.floor(scrollTop / (document.body.scrollHeight - window.outerHeight) * 100);;
+    nowBar.style.left = `${nowPer}%`
     
 
     rotateLogo.style.transform = `rotate(${rotate}deg)`;
