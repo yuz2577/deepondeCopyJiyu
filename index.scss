@@ -25,7 +25,8 @@ table {
     }
 ///////////////////////////
     body {
-        height: 2000vh;
+        height: 23500px;
+        // height: 65000px;
     }
 
     .menus {
@@ -166,14 +167,14 @@ table {
     position: fixed;
     height: 100%;
     // left: -100vw; //얘 이동
-    transition:.5s;
-    border: solid 2px red;
-    width: 1600vh;
+    transition:.3s;
+    // border: solid 2px red;
+    width: 2380vh;
     left: 110vw;
     .sec2 {
         background:yellow;
         position: absolute;
-        background: rgb(26, 26, 26);
+        background: rgb(32,32,32);
         width: 360vh; height: 100vh;
         display: flex;
         #flowerTypo {
@@ -269,6 +270,9 @@ table {
                 color: rgb(34, 34, 34);
                 transition: 1s;
             }
+            .project {
+                color: rgb(214, 208, 156);
+            }
         }
         #hyaProd {
             // border :solid 2px blue;
@@ -281,12 +285,255 @@ table {
             background-repeat: no-repeat;
             top: 50%;
             transition: .5s;
+            z-index: 100;
+        }
+    }
+    .sec4 {
+        background:rgb(32, 32, 32);
+        position: absolute;
+        left: 830vh;
+        width: 400vh; height: 100vh;
+        .content {
+            position: absolute;
+            // border: solid 2px red;
+            left: 80vh;
+            .project {
+                color:rgb(125, 204, 194)
+            }
+        }
+        .products {
+            // border: solid 2px blue;
+            display: flex;
+            position: absolute;
+            left: 180vh;
+            top: 20vh;
+            width: 130vh;
+            justify-content: space-between;
+            height: 70vh;
+            // border: solid 2px red;
+            li {
+                // border: solid 2px burlywood;;
+                width: 30vh;
+                height: 60vh;
+                text-align: center;
+                font-size: 2.3vh;
+                position: absolute;
+                // border: solid 2px blue;
+                transition: 1s;
+                top: 20%;
+                &:nth-child(2) {
+                    left: 40vh;
+                }
+                &:nth-child(3) {
+                    left: 80vh;
+                }
+                .productIMG {
+                    height:70%;
+                    width: 100%;
+                    // border: solid 2px blue;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+                .productCont {
+                    height: 30%;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    flex-direction: column;
+                    margin-top: 2vh;
+                    color: white;
+                    .productName {
+                        font-weight: 700;
+                        margin-bottom: 1vh;
+                    }
+                    .price {
+                        color:rgb(179, 179, 179);
+                    }
+                }
+                &:nth-child(1) .productIMG {
+                    background-image: url('../img/toner.png');
+
+                }
+                &:nth-child(2) .productIMG{
+                    background-image: url('../img/ampoule.png');
+                }
+                &:nth-child(3) .productIMG{
+                    background-image: url('../img/cream.png');
+                }
+            }
+        }
+        .productAD {
+            left: 350vh;
+            height: 80vh;
+            width: 100vh;
+            z-index :100;
+        }
+    }
+    .sec5 {
+        background: rgb(248, 248, 248);
+        left: 1230vh; 
+        width: 400vh;
+        // border: solid 2px blue;
+        height: 100%;
+        .content {
+            left: 70vh;
+            .logo {
+                color:rgb(32, 32, 32);
+            }
+        }
+        .products {
+            li {
+                &:nth-child(1) .productIMG{
+                    background-image: url('../img/soothing-ampoule.png');
+                }
+                &:nth-child(2) .productIMG{
+                    background-image: url('../img/cream-50ml.png');
+                }
+                &:nth-child(3) .productIMG{
+                    background-image: url('../img/sleeping-cream.png');
+                }
+            }
+        }
+        .productAD {
+            // border: solid 2px blue;
+            background-image: url('../img/main-05.jpg');
+            left: 330vh;
+            height: 90vh;
+            z-index: 100;
+        }
+    }
+    .sec6 {
+        background: white;
+        height: 100vh;
+        left: 1630vh;
+        width: 750vh;
+        .content {
+            left: 80vh;
+            .project {
+                color: rgb(190, 185, 139);
+            }
+            .logo {
+                color: black;
+            }
+        }
+        .justIMG1 {
+            position: absolute;
+            left: 180vh;
+            width: 45vh; height: 55vh;
+            top: 20vh;
+            background-image: url('../img/main-06.jpg');
+            z-index: 99;
+        }
+        .justIMG2 {
+            position: absolute;
+            top: 10vh;
+            left: 245vh;
+            width: 80vh;
+            height: 60vh;
+            background-image: url('../img/main-07.jpg');
+        }
+        .quicks {
+            position: absolute;
+            // 원래25vh
+            // border: solid 2px blue;
+            display: flex;
+            width: 180vh;
+            height: 50vh;
+            // opacity: 0;
+            li {
+                width: 30vh; height: 100%;
+                position: absolute;
+                cursor: pointer;
+                p {
+                    position: absolute;
+                    transform: translate(-50%,50%);
+                    top: 25%; left: 50%;
+                    font-size: 8vh;
+                    white-space:nowrap;
+                    font-weight: 100;
+                }
+            }
+            li:nth-child(2) {
+                left: 50vh;
+            }
+            li:nth-child(3) {
+                left: 100vh;
+            }
+        }
+        .quickHover {
+            // border: solid 2px yellow;
+            z-index: 3;
+            li {
+                z-index:4;
+                overflow: hidden;
+                color : white;
+                opacity: 0;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                transition: .5s;
+            }
+            li:nth-child(1) {
+                background-image: url('../img/quick-allproduct.jpg');
+            }
+            li:nth-child(2) {
+                background-image: url('../img/quick-hyabalane.jpg');
+            }
+            li:nth-child(3) {
+                background-image: url('../img/quick-deephydra-b5.jpg');
+            }
+        }
+        .quickNormal {
+            // border: solid 2px red;
+            z-index: 3;
+            li {
+                z-index:3;
+                // border: solid 2px red;
+                // transition: .5s;
+            }
+        }
+        .quickBehind {
+            z-index:0;
+            li {
+                opacity: 0;
+                // transition: .5s;
+            }
+        }
+    }
+    #myContent {
+        position: absolute;
+        left: 600vh;
+        // top: 40vh;
+        top: 60vh;
+        color: rgb(116, 116, 116);
+        text-align: center;
+        opacity : 0;
+        transition: .5s;
+        font-size: 2.5vh;
+    }
+    #goFirst {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 700vh;
+        top: 45vh;
+        font-size: 2.5vh;
+        cursor: pointer;
+        // border: solid 2px blue;
+        span {
+            margin-left: 1vh;
         }
     }
 }
 
-.logo {
+.logo, .qBlack, .qHover {
     font-family: 'STIX Two Text', serif;
+}
+
+.qBlack, .qHover {
+    font-weight: 100;
 }
 
 .content {
@@ -311,5 +558,100 @@ table {
     }
     .contentBT {
         margin-top: 5vh;
+        img {
+            margin-left: 5vh;
+        }
     }
+}
+
+.topM {
+    transition : .5s;
+}
+
+.productAD {
+    height: 90vh;
+    width: 130vh;
+    // border: solid 2px blue;
+    position: absolute;
+    background-image: url('../img/main-04.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+
+section {
+    position: absolute;
+    height: 100vh;
+}
+
+.products {
+    // border: solid 2px blue;
+    display: flex;
+    position: absolute;
+    left: 180vh;
+    top: 20vh;
+    width: 130vh;
+    justify-content: space-between;
+    height: 70vh;
+    // border: solid 2px red;
+    li {
+        // border: solid 2px burlywood;;
+        width: 30vh;
+        height: 60vh;
+        text-align: center;
+        font-size: 2.3vh;
+        position: absolute;
+        // border: solid 2px blue;
+        transition: 1s;
+        top: 20%;
+        &:nth-child(2) {
+            left: 40vh;
+        }
+        &:nth-child(3) {
+            left: 80vh;
+        }
+        .productIMG {
+            height:70%;
+            width: 100%;
+            // border: solid 2px blue;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .productCont {
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            margin-top: 2vh;
+            color: black;
+            .productName {
+                font-weight: 700;
+                margin-bottom: 1vh;
+            }
+            .price {
+                color:rgb(179, 179, 179);
+            }
+        }
+    }
+}
+
+.justIMG {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+
+#quickBox {
+    position: absolute;
+    // border: solid 2px blue;
+    width: auto; height: auto;
+    // top: -20vh;
+    left: 400vh;
+    top: 40vh;
+    opacity: 0;
+    transition:.5s;
 }
